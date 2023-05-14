@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    height:100vh ;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+
+}
+.container{
+    position: relative;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    height: 100%;
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.background{
+    transform: translateZ(-50px) scale(7);
+    
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+h1{
+    
+    font-family: sans-serif;
+    color:white;
+    transform: scale(5);
+    position: relative;
+    top: -20%;
+}
+section{
+    background-color: #2a2a2b;
+    color: white;
+   
+    
+
+}
+.text{
+    padding: 4rem 4rem 4rem 4rem;
+    font-size: 1.5rem;
+    
+}
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image:url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+.bg{
+    display: flex;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    justify-content: center;
+
+}
+.texthead{
+    font-size: 3rem;
+}
+.desc{
+    align-self: center;
+    background-color: white;
+    color: black;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
